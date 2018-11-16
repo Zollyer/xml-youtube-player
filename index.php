@@ -1,6 +1,6 @@
 <?php
 //copiar archivo
-$video = $_GET['v'];
+$video = $_GET['v']; //<- aqui se debe agregar el id del video , de ser posible agregar sanitizacion de datos para mas seguridad
 
 //copiamos usando la libreria de podsyc para generear el medio en mp4
 copy("http://podsync.net/download/hJfLSARrn/".$video.".mp4","videos/".$video.".mp4");
